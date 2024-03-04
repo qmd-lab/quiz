@@ -1,0 +1,22 @@
+---
+title: "Quarto Quiz Example"
+format: html
+filters:
+  - at: pre-ast
+    path: "_extensions/qmd-lab/quiz/quiz.lua"
+---
+
+## Heading
+
+---
+vars:
+  fruit: apples
+  cheese: a _ripe_ meunster
+  here: '[here](https://en.wikipedia.org/wiki/Muenster_cheese)'
+---
+
+I like {{@ fruit @}} with {{@ cheese @}}. Read about it {{@ here @}}.
+
+
+
+
